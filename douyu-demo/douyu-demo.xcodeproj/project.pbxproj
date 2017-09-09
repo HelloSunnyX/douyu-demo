@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD2064E51F64177800780055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064E41F64177800780055 /* AppDelegate.swift */; };
+		DD2064E71F64177800780055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064E61F64177800780055 /* ViewController.swift */; };
+		DD2064EA1F64177800780055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2064E81F64177800780055 /* Main.storyboard */; };
+		DD2064EC1F64177800780055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2064EB1F64177800780055 /* Assets.xcassets */; };
+		DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2064ED1F64177800780055 /* LaunchScreen.storyboard */; };
+		DD2064FA1F64177800780055 /* douyu_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064F91F64177800780055 /* douyu_demoTests.swift */; };
+		DD2065051F64177800780055 /* douyu_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065041F64177800780055 /* douyu_demoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD2064F61F64177800780055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2064D91F64177800780055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2064E01F64177800780055;
+			remoteInfo = "douyu-demo";
+		};
+		DD2065011F64177800780055 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD2064D91F64177800780055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD2064E01F64177800780055;
+			remoteInfo = "douyu-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD2064E11F64177800780055 /* douyu-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "douyu-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2064E41F64177800780055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DD2064E61F64177800780055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD2064E91F64177800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD2064EB1F64177800780055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD2064EE1F64177800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD2064F01F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2064F51F64177800780055 /* douyu-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douyu-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2064F91F64177800780055 /* douyu_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyu_demoTests.swift; sourceTree = "<group>"; };
+		DD2064FB1F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2065001F64177800780055 /* douyu-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douyu-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD2065041F64177800780055 /* douyu_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyu_demoUITests.swift; sourceTree = "<group>"; };
+		DD2065061F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD2064DE1F64177800780055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064F21F64177800780055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064FD1F64177800780055 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD2064D81F64177800780055 = {
+			isa = PBXGroup;
+			children = (
+				DD2064E31F64177800780055 /* douyu-demo */,
+				DD2064F81F64177800780055 /* douyu-demoTests */,
+				DD2065031F64177800780055 /* douyu-demoUITests */,
+				DD2064E21F64177800780055 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD2064E21F64177800780055 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD2064E11F64177800780055 /* douyu-demo.app */,
+				DD2064F51F64177800780055 /* douyu-demoTests.xctest */,
+				DD2065001F64177800780055 /* douyu-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2064E31F64177800780055 /* douyu-demo */ = {
+			isa = PBXGroup;
+			children = (
+				DD2064E41F64177800780055 /* AppDelegate.swift */,
+				DD2064E61F64177800780055 /* ViewController.swift */,
+				DD2064E81F64177800780055 /* Main.storyboard */,
+				DD2064EB1F64177800780055 /* Assets.xcassets */,
+				DD2064ED1F64177800780055 /* LaunchScreen.storyboard */,
+				DD2064F01F64177800780055 /* Info.plist */,
+			);
+			path = "douyu-demo";
+			sourceTree = "<group>";
+		};
+		DD2064F81F64177800780055 /* douyu-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2064F91F64177800780055 /* douyu_demoTests.swift */,
+				DD2064FB1F64177800780055 /* Info.plist */,
+			);
+			path = "douyu-demoTests";
+			sourceTree = "<group>";
+		};
+		DD2065031F64177800780055 /* douyu-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD2065041F64177800780055 /* douyu_demoUITests.swift */,
+				DD2065061F64177800780055 /* Info.plist */,
+			);
+			path = "douyu-demoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD2064E01F64177800780055 /* douyu-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD2065091F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demo" */;
+			buildPhases = (
+				DD2064DD1F64177800780055 /* Sources */,
+				DD2064DE1F64177800780055 /* Frameworks */,
+				DD2064DF1F64177800780055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "douyu-demo";
+			productName = "douyu-demo";
+			productReference = DD2064E11F64177800780055 /* douyu-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD2064F41F64177800780055 /* douyu-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD20650C1F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demoTests" */;
+			buildPhases = (
+				DD2064F11F64177800780055 /* Sources */,
+				DD2064F21F64177800780055 /* Frameworks */,
+				DD2064F31F64177800780055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2064F71F64177800780055 /* PBXTargetDependency */,
+			);
+			name = "douyu-demoTests";
+			productName = "douyu-demoTests";
+			productReference = DD2064F51F64177800780055 /* douyu-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD2064FF1F64177800780055 /* douyu-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD20650F1F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demoUITests" */;
+			buildPhases = (
+				DD2064FC1F64177800780055 /* Sources */,
+				DD2064FD1F64177800780055 /* Frameworks */,
+				DD2064FE1F64177800780055 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD2065021F64177800780055 /* PBXTargetDependency */,
+			);
+			name = "douyu-demoUITests";
+			productName = "douyu-demoUITests";
+			productReference = DD2065001F64177800780055 /* douyu-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD2064D91F64177800780055 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Aidan;
+				TargetAttributes = {
+					DD2064E01F64177800780055 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5YRWAJ8D4D;
+						ProvisioningStyle = Automatic;
+					};
+					DD2064F41F64177800780055 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5YRWAJ8D4D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD2064E01F64177800780055;
+					};
+					DD2064FF1F64177800780055 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5YRWAJ8D4D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD2064E01F64177800780055;
+					};
+				};
+			};
+			buildConfigurationList = DD2064DC1F64177800780055 /* Build configuration list for PBXProject "douyu-demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD2064D81F64177800780055;
+			productRefGroup = DD2064E21F64177800780055 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD2064E01F64177800780055 /* douyu-demo */,
+				DD2064F41F64177800780055 /* douyu-demoTests */,
+				DD2064FF1F64177800780055 /* douyu-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD2064DF1F64177800780055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */,
+				DD2064EC1F64177800780055 /* Assets.xcassets in Resources */,
+				DD2064EA1F64177800780055 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064F31F64177800780055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064FE1F64177800780055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD2064DD1F64177800780055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2064E71F64177800780055 /* ViewController.swift in Sources */,
+				DD2064E51F64177800780055 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064F11F64177800780055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2064FA1F64177800780055 /* douyu_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD2064FC1F64177800780055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD2065051F64177800780055 /* douyu_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD2064F71F64177800780055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2064E01F64177800780055 /* douyu-demo */;
+			targetProxy = DD2064F61F64177800780055 /* PBXContainerItemProxy */;
+		};
+		DD2065021F64177800780055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD2064E01F64177800780055 /* douyu-demo */;
+			targetProxy = DD2065011F64177800780055 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD2064E81F64177800780055 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2064E91F64177800780055 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2064ED1F64177800780055 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2064EE1F64177800780055 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD2065071F64177800780055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD2065081F64177800780055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD20650A1F64177800780055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD20650B1F64177800780055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DD20650D1F64177800780055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douyu-demo.app/douyu-demo";
+			};
+			name = Debug;
+		};
+		DD20650E1F64177800780055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/douyu-demo.app/douyu-demo";
+			};
+			name = Release;
+		};
+		DD2065101F64177800780055 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "douyu-demo";
+			};
+			name = Debug;
+		};
+		DD2065111F64177800780055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
+				INFOPLIST_FILE = "douyu-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "douyu-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD2064DC1F64177800780055 /* Build configuration list for PBXProject "douyu-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2065071F64177800780055 /* Debug */,
+				DD2065081F64177800780055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD2065091F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD20650A1F64177800780055 /* Debug */,
+				DD20650B1F64177800780055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD20650C1F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD20650D1F64177800780055 /* Debug */,
+				DD20650E1F64177800780055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD20650F1F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD2065101F64177800780055 /* Debug */,
+				DD2065111F64177800780055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD2064D91F64177800780055 /* Project object */;
+}
