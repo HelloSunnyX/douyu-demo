@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		DD2064E51F64177800780055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064E41F64177800780055 /* AppDelegate.swift */; };
-		DD2064EA1F64177800780055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2064E81F64177800780055 /* Main.storyboard */; };
-		DD2064EC1F64177800780055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2064EB1F64177800780055 /* Assets.xcassets */; };
 		DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2064ED1F64177800780055 /* LaunchScreen.storyboard */; };
 		DD2064FA1F64177800780055 /* douyu_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064F91F64177800780055 /* douyu_demoTests.swift */; };
 		DD2065051F64177800780055 /* douyu_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065041F64177800780055 /* douyu_demoUITests.swift */; };
+		DD2065531F64713200780055 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20654E1F64713200780055 /* MainViewController.swift */; };
+		DD2065561F64716400780055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065541F64716400780055 /* Main.storyboard */; };
+		DD2065591F64717400780055 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065571F64717400780055 /* Profile.storyboard */; };
+		DD20655C1F64717A00780055 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20655A1F64717A00780055 /* Live.storyboard */; };
+		DD20655F1F64718000780055 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20655D1F64718000780055 /* Home.storyboard */; };
+		DD2065621F64718800780055 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065601F64718800780055 /* Follow.storyboard */; };
+		DD2065651F6476C100780055 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065641F6476C100780055 /* HomeViewController.swift */; };
+		DD2065691F64DBBC00780055 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */; };
+		DD2065731F64F75E00780055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2065721F64F75E00780055 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +42,6 @@
 /* Begin PBXFileReference section */
 		DD2064E11F64177800780055 /* douyu-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "douyu-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2064E41F64177800780055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD2064E91F64177800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DD2064EB1F64177800780055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2064EE1F64177800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2064F01F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2064F51F64177800780055 /* douyu-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douyu-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +50,15 @@
 		DD2065001F64177800780055 /* douyu-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douyu-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2065041F64177800780055 /* douyu_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyu_demoUITests.swift; sourceTree = "<group>"; };
 		DD2065061F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD20654E1F64713200780055 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD2065551F64716400780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2065581F64717400780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Profile.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD20655B1F64717A00780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Live.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD20655E1F64718000780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Home.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2065611F64718800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Follow.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2065641F6476C100780055 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		DD2065721F64F75E00780055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +109,10 @@
 		DD2064E31F64177800780055 /* douyu-demo */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065141F64347300780055 /* Classes */,
+				DD2065481F64713200780055 /* Classes */,
 				DD2064E41F64177800780055 /* AppDelegate.swift */,
-				DD2064E81F64177800780055 /* Main.storyboard */,
-				DD2064EB1F64177800780055 /* Assets.xcassets */,
 				DD2064ED1F64177800780055 /* LaunchScreen.storyboard */,
+				DD2065721F64F75E00780055 /* Assets.xcassets */,
 				DD2064F01F64177800780055 /* Info.plist */,
 			);
 			path = "douyu-demo";
@@ -123,57 +136,89 @@
 			path = "douyu-demoUITests";
 			sourceTree = "<group>";
 		};
-		DD2065141F64347300780055 /* Classes */ = {
+		DD2065481F64713200780055 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065181F64347300780055 /* Main */,
-				DD2065161F64347300780055 /* Home */,
-				DD2065171F64347300780055 /* Live */,
-				DD2065151F64347300780055 /* Follow */,
-				DD2065191F64347300780055 /* Profile */,
-				DD20651A1F64347300780055 /* Tools */,
+				DD2065631F6471C600780055 /* Tools */,
+				DD2065491F64713200780055 /* Controllers */,
+				DD2065511F64713200780055 /* Models */,
+				DD2065521F64713200780055 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		DD2065151F64347300780055 /* Follow */ = {
+		DD2065491F64713200780055 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DD20654D1F64713200780055 /* Main */,
+				DD20654B1F64713200780055 /* Home */,
+				DD20654C1F64713200780055 /* Live */,
+				DD20654A1F64713200780055 /* Follow */,
+				DD20654F1F64713200780055 /* Profile */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD20654A1F64713200780055 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				DD2065601F64718800780055 /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
 		};
-		DD2065161F64347300780055 /* Home */ = {
+		DD20654B1F64713200780055 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DD20655D1F64718000780055 /* Home.storyboard */,
+				DD2065641F6476C100780055 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		DD2065171F64347300780055 /* Live */ = {
+		DD20654C1F64713200780055 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				DD20655A1F64717A00780055 /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
 		};
-		DD2065181F64347300780055 /* Main */ = {
+		DD20654D1F64713200780055 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DD2065541F64716400780055 /* Main.storyboard */,
+				DD20654E1F64713200780055 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		DD2065191F64347300780055 /* Profile */ = {
+		DD20654F1F64713200780055 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DD2065571F64717400780055 /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		DD20651A1F64347300780055 /* Tools */ = {
+		DD2065511F64713200780055 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD2065521F64713200780055 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2065631F6471C600780055 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -288,9 +333,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2065561F64716400780055 /* Main.storyboard in Resources */,
 				DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */,
-				DD2064EC1F64177800780055 /* Assets.xcassets in Resources */,
-				DD2064EA1F64177800780055 /* Main.storyboard in Resources */,
+				DD2065591F64717400780055 /* Profile.storyboard in Resources */,
+				DD20655F1F64718000780055 /* Home.storyboard in Resources */,
+				DD2065731F64F75E00780055 /* Assets.xcassets in Resources */,
+				DD2065621F64718800780055 /* Follow.storyboard in Resources */,
+				DD20655C1F64717A00780055 /* Live.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2064E51F64177800780055 /* AppDelegate.swift in Sources */,
+				DD2065531F64713200780055 /* MainViewController.swift in Sources */,
+				DD2065691F64DBBC00780055 /* UIBarButtonItem-Extension.swift in Sources */,
+				DD2065651F6476C100780055 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,20 +403,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD2064E81F64177800780055 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD2064E91F64177800780055 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD2064ED1F64177800780055 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DD2064EE1F64177800780055 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2065541F64716400780055 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2065551F64716400780055 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2065571F64717400780055 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2065581F64717400780055 /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		DD20655A1F64717A00780055 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD20655B1F64717A00780055 /* Base */,
+			);
+			name = Live.storyboard;
+			sourceTree = "<group>";
+		};
+		DD20655D1F64718000780055 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD20655E1F64718000780055 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2065601F64718800780055 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2065611F64718800780055 /* Base */,
+			);
+			name = Follow.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -472,7 +556,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
 				INFOPLIST_FILE = "douyu-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,7 +572,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5YRWAJ8D4D;
 				INFOPLIST_FILE = "douyu-demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aidan.douyu-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
