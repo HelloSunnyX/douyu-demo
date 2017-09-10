@@ -13,10 +13,23 @@ private let kPageTitleViewH: CGFloat = 40
 class HomeViewController: UIViewController {
 
     private lazy var pageTitleView: PageTitleView = {
-        let frame = CGRect.init(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kPageTitleViewH)
+        let frame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kPageTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let view = PageTitleView(frame: frame, titles: titles)
         return view;
+    }()
+    
+    private lazy var pageContentView: PageContentView = {
+        let contentH = kScreenH - kStatusBarH - kNavBarH - kPageTitleViewH
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH + kPageTitleViewH, width: kScreenW, height: contentH)
+        var childrenVC = [UIViewController]()
+        for _ in 0..<4 {
+            let vc = UIViewController()
+            vc.view.backgroundColor = getRandomColor()
+            childrenVC.append(vc)
+        }
+        let view = PageContentView(frame: contentFrame, childrenVC: childrenVC, parentVC: self)
+        return view
     }()
     
     override func viewDidLoad() {
@@ -28,7 +41,9 @@ class HomeViewController: UIViewController {
     func setupUI() {
         automaticallyAdjustsScrollViewInsets = false
         setupNavBarButton()
-        setupPageTitleView()
+        view.addSubview(pageTitleView)
+        view.addSubview(pageContentView)
+        
     }
     
     func setupNavBarButton() {
@@ -40,10 +55,6 @@ class HomeViewController: UIViewController {
         let history = UIBarButtonItem.init(imageName: "image_my_history", hlImageName: "Image_my_history_click", size: rightItemSize)
         
         navigationItem.rightBarButtonItems = [history, search, scan]
-    }
-    
-    func setupPageTitleView() {
-        view.addSubview(pageTitleView)
     }
 
 }
