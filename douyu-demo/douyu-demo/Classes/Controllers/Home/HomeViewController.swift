@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
         return view;
     }()
     
-    private lazy var pageContentView: PageContentView = {
+    private lazy var pageContentView: PageContentView = { [weak self] in
         let contentH = kScreenH - kStatusBarH - kNavBarH - kPageTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH + kPageTitleViewH, width: kScreenW, height: contentH)
         var childrenVC = [UIViewController]()
