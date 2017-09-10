@@ -12,14 +12,15 @@ private let kPageTitleViewH: CGFloat = 40
 
 class HomeViewController: UIViewController {
 
-    private lazy var pageTitleView: PageTitleView = {
+    lazy var pageTitleView: PageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kPageTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
         let view = PageTitleView(frame: frame, titles: titles)
+        view.delegate = self
         return view;
     }()
     
-    private lazy var pageContentView: PageContentView = { [weak self] in
+    lazy var pageContentView: PageContentView = {[weak self] in
         let contentH = kScreenH - kStatusBarH - kNavBarH - kPageTitleViewH
         let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavBarH + kPageTitleViewH, width: kScreenW, height: contentH)
         var childrenVC = [UIViewController]()
@@ -57,4 +58,11 @@ class HomeViewController: UIViewController {
         navigationItem.rightBarButtonItems = [history, search, scan]
     }
 
+}
+
+extension HomeViewController: PageTitleViewDelegate {
+    
+    func onSelectTitle(titleView: PageTitleView, index: Int) {
+        pageContentView.setPage(index: index)
+    }
 }

@@ -15,7 +15,7 @@ class PageContentView: UIView {
     let childrenVC: [UIViewController]
     weak var parentVC: UIViewController?
     
-    private lazy var collectionView: UICollectionView = { [weak self] in
+    lazy var collectionView: UICollectionView = {[weak self] in
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = (self?.bounds.size)!
         layout.minimumLineSpacing = 0
@@ -77,5 +77,12 @@ extension PageContentView: UICollectionViewDataSource, UICollectionViewDelegate 
         cell.contentView.addSubview(vc.view)
         
         return cell
+    }
+}
+
+extension PageContentView {
+    func setPage(index: Int) {
+        let offsetX = kScreenW * CGFloat(index)
+        collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
     }
 }
