@@ -31,6 +31,6 @@ extension HomeViewController {
         let search = UIBarButtonItem.init(imageName: "btn_search", hlImageName: "btn_search_clicked", size: rightItemSize)
         let history = UIBarButtonItem.init(imageName: "image_my_history", hlImageName: "Image_my_history_click", size: rightItemSize)
 
-        navigationItem.rightBarButtonItems = [scan, search, history]
+        navigationItem.rightBarButtonItems = [history, search, scan]
     }
 }
