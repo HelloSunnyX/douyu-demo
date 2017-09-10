@@ -8,19 +8,27 @@
 
 import UIKit
 
+private let kPageTitleViewH: CGFloat = 40
+
 class HomeViewController: UIViewController {
 
+    private lazy var pageTitleView: PageTitleView = {
+        let frame = CGRect.init(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kPageTitleViewH)
+        let titles = ["推荐", "游戏", "娱乐", "趣玩"]
+        let view = PageTitleView(frame: frame, titles: titles)
+        return view;
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupUI()
     }
-
-}
-
-extension HomeViewController {
+    
     func setupUI() {
+        automaticallyAdjustsScrollViewInsets = false
         setupNavBarButton()
+        setupPageTitleView()
     }
     
     func setupNavBarButton() {
@@ -30,7 +38,12 @@ extension HomeViewController {
         let scan = UIBarButtonItem.init(imageName: "Image_scan", hlImageName: "Image_scan_click", size: rightItemSize)
         let search = UIBarButtonItem.init(imageName: "btn_search", hlImageName: "btn_search_clicked", size: rightItemSize)
         let history = UIBarButtonItem.init(imageName: "image_my_history", hlImageName: "Image_my_history_click", size: rightItemSize)
-
+        
         navigationItem.rightBarButtonItems = [history, search, scan]
     }
+    
+    func setupPageTitleView() {
+        view.addSubview(pageTitleView)
+    }
+
 }
