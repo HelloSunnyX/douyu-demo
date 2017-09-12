@@ -20,6 +20,7 @@ class PageTitleView: UIView {
     var selectedIndex: Int = 0
     let titles: [String]
     lazy var titleLabels: [UILabel] = [UILabel]()
+    var labelW: CGFloat = 0
     
     lazy var scrollView: UIScrollView = {
         let view = UIScrollView()
@@ -61,8 +62,8 @@ extension PageTitleView {
     
     func setupLabels() {
         let labelY: CGFloat = 0
-        let labelW: CGFloat = frame.width / CGFloat(titles.count)
         let labelH: CGFloat = frame.height
+        labelW = frame.width / CGFloat(titles.count)
         
         for (index, title) in titles.enumerated() {
             let labelX: CGFloat = labelW * CGFloat(index)
@@ -132,7 +133,6 @@ extension PageTitleView {
     
     func setTitleView(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         print("progress: \(progress), sourceIndex: \(sourceIndex), progress: \(targetIndex)")
-        let labelW = frame.width / CGFloat(titles.count)
         let sourceLabel = titleLabels[sourceIndex]
         let targetLabel = titleLabels[targetIndex]
         var lineX: CGFloat = 0
