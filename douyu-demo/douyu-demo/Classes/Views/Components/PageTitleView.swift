@@ -8,11 +8,11 @@
 
 import UIKit
 
-private let kScrollLineH: CGFloat = 2
-
 protocol PageTitleViewDelegate: class {
     func onSelectTitle(titleView: PageTitleView, index: Int)
 }
+
+private let kScrollLineH: CGFloat = 2
 
 class PageTitleView: UIView {
     
@@ -125,6 +125,35 @@ extension PageTitleView {
         }
         
         delegate?.onSelectTitle(titleView: self, index: selectedIndex)
+    }
+}
+
+extension PageTitleView {
+    
+    func setTitleView(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        print("progress: \(progress), sourceIndex: \(sourceIndex), progress: \(targetIndex)")
+        let labelW = frame.width / CGFloat(titles.count)
+        let sourceLabel = titleLabels[sourceIndex]
+        let targetLabel = titleLabels[targetIndex]
+        var lineX: CGFloat = 0
+        
+        if sourceIndex < targetIndex {
+            lineX = sourceLabel.frame.origin.x + labelW * progress
+        }
+        if sourceIndex > targetIndex {
+            lineX = sourceLabel.frame.origin.x - labelW * progress
+        }
+        if sourceIndex == targetIndex {
+            lineX = sourceLabel.frame.origin.x
+        }
+        let lineY = targetLabel.bounds.height - kScrollLineH
+        let lineW = targetLabel.bounds.width
+        
+        UIView.animate(withDuration: 0.15) {
+            self.scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: kScrollLineH)
+        }
+
+
     }
 }
 

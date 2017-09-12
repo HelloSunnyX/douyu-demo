@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol PageContentViewDelegate: class {
+    func onScroll(progress: CGFloat, sourceIndex: Int, targetIndex: Int)
+}
+
 let PageContentCellID = "PageContentCellID"
 
 class PageContentView: UIView {
     
+    weak var delegate: PageContentViewDelegate?
     let childrenVC: [UIViewController]
     weak var parentVC: UIViewController?
+    var startOffsetX: CGFloat = 0
     
     lazy var collectionView: UICollectionView = {[weak self] in
         let layout = UICollectionViewFlowLayout()
@@ -59,7 +65,7 @@ class PageContentView: UIView {
 
 }
 
-extension PageContentView: UICollectionViewDataSource, UICollectionViewDelegate {
+extension PageContentView: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childrenVC.count
@@ -77,6 +83,49 @@ extension PageContentView: UICollectionViewDataSource, UICollectionViewDelegate 
         cell.contentView.addSubview(vc.view)
         
         return cell
+    }
+}
+
+extension PageContentView: UICollectionViewDelegate {
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        startOffsetX = scrollView.contentOffset.x
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let currentOffsetX = scrollView.contentOffset.x
+        let scrollViewW = scrollView.bounds.width
+        let ratio = currentOffsetX / scrollViewW
+        let resolvedRatio = ratio - floor(ratio)
+        var progress: CGFloat = 0
+        var sourceIndex: Int = 0
+        var targetIndex: Int = 0
+    
+        if currentOffsetX - startOffsetX > 0 {
+            progress = resolvedRatio
+            sourceIndex = Int(ratio)
+            targetIndex = sourceIndex + 1
+            if targetIndex >= childrenVC.count {
+                targetIndex = childrenVC.count - 1
+            }
+            if currentOffsetX - startOffsetX == scrollViewW {
+                progress = 1
+                targetIndex = sourceIndex
+            }
+            
+        } else {
+            progress = 1 - resolvedRatio
+            targetIndex = Int(ratio)
+            sourceIndex = targetIndex + 1
+            if sourceIndex > childrenVC.count {
+                sourceIndex = childrenVC.count - 1
+            }
+            if startOffsetX - currentOffsetX == scrollViewW {
+                sourceIndex = targetIndex
+            }
+        }
+        
+        delegate?.onScroll(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
 

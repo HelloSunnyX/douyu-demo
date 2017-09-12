@@ -15,9 +15,10 @@ class HomeViewController: UIViewController {
     lazy var pageTitleView: PageTitleView = {[weak self] in
         let frame = CGRect(x: 0, y: kStatusBarH + kNavBarH, width: kScreenW, height: kPageTitleViewH)
         let titles = ["推荐", "游戏", "娱乐", "趣玩"]
-        let view = PageTitleView(frame: frame, titles: titles)
-        view.delegate = self
-        return view;
+        let titleView = PageTitleView(frame: frame, titles: titles)
+        titleView.delegate = self
+        
+        return titleView;
     }()
     
     lazy var pageContentView: PageContentView = {[weak self] in
@@ -29,8 +30,10 @@ class HomeViewController: UIViewController {
             vc.view.backgroundColor = getRandomColor()
             childrenVC.append(vc)
         }
-        let view = PageContentView(frame: contentFrame, childrenVC: childrenVC, parentVC: self)
-        return view
+        let pageView = PageContentView(frame: contentFrame, childrenVC: childrenVC, parentVC: self)
+        pageView.delegate = self
+        
+        return pageView
     }()
     
     override func viewDidLoad() {
@@ -64,5 +67,12 @@ extension HomeViewController: PageTitleViewDelegate {
     
     func onSelectTitle(titleView: PageTitleView, index: Int) {
         pageContentView.setPage(index: index)
+    }
+}
+
+extension HomeViewController: PageContentViewDelegate {
+    
+    func onScroll(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        pageTitleView.setTitleView(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
