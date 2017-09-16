@@ -9,20 +9,23 @@
 import UIKit
 
 protocol PageTitleViewDelegate: class {
-    func onSelectTitle(titleView: PageTitleView, index: Int)
+    func onSelectTitle(titleView: PageTitleView?, index: Int?)
 }
 
 private let kScrollLineH: CGFloat = 2
+private let kSelectedRGB: (CGFloat, CGFloat, CGFloat) = (255, 128, 0)
+private let kNormalRGB: (CGFloat, CGFloat, CGFloat) = (85, 85, 85)
+private let kDeltaRGB: (CGFloat, CGFloat, CGFloat) = (kSelectedRGB.0 - kNormalRGB.0, kSelectedRGB.1 - kNormalRGB.1, kSelectedRGB.2 - kNormalRGB.2)
 
 class PageTitleView: UIView {
     
     weak var delegate: PageTitleViewDelegate?
-    var selectedIndex: Int = 0
+    var currentIndex: Int = 0
     let titles: [String]
     lazy var titleLabels: [UILabel] = [UILabel]()
     var labelW: CGFloat = 0
     
-    lazy var scrollView: UIScrollView = {
+    lazy var scrollView: UIScrollView = {[weak self] in
         let view = UIScrollView()
         view.showsHorizontalScrollIndicator = false
         view.scrollsToTop = false
@@ -32,7 +35,7 @@ class PageTitleView: UIView {
     
     lazy var scrollLine: UIView = {
         let line = UIView()
-        line.backgroundColor = UIColor.orange
+        line.backgroundColor = UIColor(r: kSelectedRGB.0, g: kSelectedRGB.1, b: kSelectedRGB.2)
         return line
     }()
 
@@ -71,7 +74,7 @@ extension PageTitleView {
             
             label.tag = index
             label.text = title
-            label.textColor = UIColor.darkGray
+            label.textColor = UIColor(r: kNormalRGB.0, g: kNormalRGB.1, b: kNormalRGB.2)
             label.font = UIFont.systemFont(ofSize: 16)
             label.textAlignment = .center
             label.frame = CGRect(x: labelX, y: labelY, width: labelW, height: labelH)
@@ -97,7 +100,7 @@ extension PageTitleView {
         guard let firstLabel = titleLabels.first else {
             return
         }
-        firstLabel.textColor = UIColor.orange
+        firstLabel.textColor = UIColor(r: kSelectedRGB.0, g: kSelectedRGB.1, b: kSelectedRGB.2)
         
         scrollView.addSubview(scrollLine)
         scrollLine.frame = CGRect(x: firstLabel.frame.origin.x, y: frame.height - kScrollLineH, width: firstLabel.frame.width, height: kScrollLineH)
@@ -111,49 +114,54 @@ extension PageTitleView {
         guard let selectedLabel = tapGes.view as? UILabel else {
             return
         }
-        let lastSelectedLabel = titleLabels[selectedIndex]
         
-        selectedLabel.textColor = UIColor.orange
-        lastSelectedLabel.textColor = UIColor.darkGray
-        selectedIndex = selectedLabel.tag
+        if currentIndex == selectedLabel.tag {
+            return
+        }
+        
+        let sourceLabel = titleLabels[currentIndex]
+        let targetLabel = titleLabels[selectedLabel.tag]
+        
+        sourceLabel.textColor = UIColor(r: kNormalRGB.0, g: kNormalRGB.1, b: kNormalRGB.2)
+        targetLabel.textColor = UIColor(r: kSelectedRGB.0, g: kSelectedRGB.1, b: kSelectedRGB.2)
         
         let lineX = selectedLabel.frame.origin.x
         let lineY = selectedLabel.bounds.height - kScrollLineH
         let lineW = selectedLabel.bounds.width
         
-        UIView.animate(withDuration: 0.15) {
-            self.scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: kScrollLineH)
+        UIView.animate(withDuration: 0.2, animations: {[weak self] in
+            self?.scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: kScrollLineH)
+        }) { (end) in
+            self.delegate?.onSelectTitle(titleView: self, index: self.currentIndex)
         }
-        
-        delegate?.onSelectTitle(titleView: self, index: selectedIndex)
+        self.currentIndex = selectedLabel.tag
     }
 }
 
 extension PageTitleView {
     
-    func setTitleView(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
-        print("progress: \(progress), sourceIndex: \(sourceIndex), progress: \(targetIndex)")
+    func setTitleViewScrollLine(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        
+        if sourceIndex > titles.count - 1 {
+            return
+        }
+        
         let sourceLabel = titleLabels[sourceIndex]
         let targetLabel = titleLabels[targetIndex]
-        var lineX: CGFloat = 0
         
-        if sourceIndex < targetIndex {
-            lineX = sourceLabel.frame.origin.x + labelW * progress
-        }
-        if sourceIndex > targetIndex {
-            lineX = sourceLabel.frame.origin.x - labelW * progress
-        }
-        if sourceIndex == targetIndex {
-            lineX = sourceLabel.frame.origin.x
-        }
+        let moveTotalW = targetLabel.frame.origin.x - sourceLabel.frame.origin.x
+        let moveDeltaW = moveTotalW * progress
+        
+        let lineX: CGFloat = sourceLabel.frame.origin.x + moveDeltaW
         let lineY = targetLabel.bounds.height - kScrollLineH
         let lineW = targetLabel.bounds.width
         
-        UIView.animate(withDuration: 0.15) {
-            self.scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: kScrollLineH)
-        }
-
-
+        sourceLabel.textColor = UIColor(r: kSelectedRGB.0 - kDeltaRGB.0 * progress, g: kSelectedRGB.1 - kDeltaRGB.1 * progress, b: kSelectedRGB.2 - kDeltaRGB.2 * progress)
+        targetLabel.textColor = UIColor(r: kNormalRGB.0 + kDeltaRGB.0 * progress, g: kNormalRGB.1 + kDeltaRGB.1 * progress, b: kNormalRGB.2 + kDeltaRGB.2 * progress)
+        
+        self.scrollLine.frame = CGRect(x: lineX, y: lineY, width: lineW, height: kScrollLineH)
+        
+        currentIndex = targetIndex
     }
 }
 

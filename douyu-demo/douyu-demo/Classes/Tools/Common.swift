@@ -13,7 +13,3 @@ let kNavBarH: CGFloat = 44
 
 let kScreenW: CGFloat = UIScreen.main.bounds.width
 let kScreenH: CGFloat = UIScreen.main.bounds.height
-
-func getRandomColor() -> UIColor {
-    return UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
-}

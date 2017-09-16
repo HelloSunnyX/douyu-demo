@@ -20,6 +20,7 @@ class PageContentView: UIView {
     let childrenVC: [UIViewController]
     weak var parentVC: UIViewController?
     var startOffsetX: CGFloat = 0
+    var delegateDisable = true
     
     lazy var collectionView: UICollectionView = {[weak self] in
         let layout = UICollectionViewFlowLayout()
@@ -90,6 +91,11 @@ extension PageContentView: UICollectionViewDelegate {
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         startOffsetX = scrollView.contentOffset.x
+        delegateDisable = false
+    }
+    
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        delegateDisable = true
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -125,12 +131,15 @@ extension PageContentView: UICollectionViewDelegate {
             }
         }
         
-        delegate?.onScroll(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        if !delegateDisable {
+            delegate?.onScroll(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        }
     }
 }
 
 extension PageContentView {
     func setPage(index: Int) {
+        delegateDisable = true
         let offsetX = kScreenW * CGFloat(index)
         collectionView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
     }

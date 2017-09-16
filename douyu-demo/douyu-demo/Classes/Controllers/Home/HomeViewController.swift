@@ -27,7 +27,7 @@ class HomeViewController: UIViewController {
         var childrenVC = [UIViewController]()
         for _ in 0..<4 {
             let vc = UIViewController()
-            vc.view.backgroundColor = getRandomColor()
+            vc.view.backgroundColor = UIColor().randomColor()
             childrenVC.append(vc)
         }
         let pageView = PageContentView(frame: contentFrame, childrenVC: childrenVC, parentVC: self)
@@ -65,14 +65,14 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: PageTitleViewDelegate {
     
-    func onSelectTitle(titleView: PageTitleView, index: Int) {
-        pageContentView.setPage(index: index)
+    func onSelectTitle(titleView: PageTitleView?, index: Int?) {
+        pageContentView.setPage(index: index!)
     }
 }
 
 extension HomeViewController: PageContentViewDelegate {
     
     func onScroll(progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
-        pageTitleView.setTitleView(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        pageTitleView.setTitleViewScrollLine(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
     }
 }
