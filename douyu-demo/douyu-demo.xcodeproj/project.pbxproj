@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73CBA310E396AD7FFC5AC131 /* Pods_douyu_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04A6BCD643249FFD2B9CB9 /* Pods_douyu_demo.framework */; };
 		DD2064E51F64177800780055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064E41F64177800780055 /* AppDelegate.swift */; };
 		DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2064ED1F64177800780055 /* LaunchScreen.storyboard */; };
 		DD2064FA1F64177800780055 /* douyu_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2064F91F64177800780055 /* douyu_demoTests.swift */; };
 		DD2065051F64177800780055 /* douyu_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065041F64177800780055 /* douyu_demoUITests.swift */; };
-		DD2065531F64713200780055 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20654E1F64713200780055 /* MainViewController.swift */; };
-		DD2065561F64716400780055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065541F64716400780055 /* Main.storyboard */; };
-		DD2065591F64717400780055 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065571F64717400780055 /* Profile.storyboard */; };
-		DD20655C1F64717A00780055 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20655A1F64717A00780055 /* Live.storyboard */; };
-		DD20655F1F64718000780055 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20655D1F64718000780055 /* Home.storyboard */; };
-		DD2065621F64718800780055 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2065601F64718800780055 /* Follow.storyboard */; };
-		DD2065651F6476C100780055 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065641F6476C100780055 /* HomeViewController.swift */; };
-		DD2065691F64DBBC00780055 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */; };
 		DD2065731F64F75E00780055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2065721F64F75E00780055 /* Assets.xcassets */; };
-		DD2065771F6506AD00780055 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065761F6506AD00780055 /* PageTitleView.swift */; };
-		DD2065791F65086B00780055 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2065781F65086B00780055 /* Common.swift */; };
-		DD20657B1F65376500780055 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20657A1F65376500780055 /* PageContentView.swift */; };
-		DD20657D1F6539ED00780055 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20657C1F6539ED00780055 /* UIColor-Extension.swift */; };
+		DD2068231F6E381E00D6968B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20680C1F6E381E00D6968B /* HomeViewController.swift */; };
+		DD2068241F6E381E00D6968B /* RecommandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20680D1F6E381E00D6968B /* RecommandViewController.swift */; };
+		DD2068251F6E381E00D6968B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2068161F6E381E00D6968B /* MainViewController.swift */; };
+		DD2068261F6E381E00D6968B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20681E1F6E381E00D6968B /* Common.swift */; };
+		DD2068271F6E381E00D6968B /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20681F1F6E381E00D6968B /* UIBarButtonItem-Extension.swift */; };
+		DD2068281F6E381E00D6968B /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2068201F6E381E00D6968B /* UIColor-Extension.swift */; };
+		DD20682B1F6E3BE700D6968B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2068291F6E3BE700D6968B /* Main.storyboard */; };
+		DD20682E1F6E3BF900D6968B /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20682C1F6E3BF900D6968B /* Follow.storyboard */; };
+		DD2068311F6E3BFF00D6968B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD20682F1F6E3BFF00D6968B /* Home.storyboard */; };
+		DD2068341F6E3C0700D6968B /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2068321F6E3C0700D6968B /* Live.storyboard */; };
+		DD2068371F6E3C1000D6968B /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2068351F6E3C1000D6968B /* Profile.storyboard */; };
+		DD20683A1F6E3E3000D6968B /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2068381F6E3E3000D6968B /* CollectionHeaderView.swift */; };
+		DD20683B1F6E3E3000D6968B /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2068391F6E3E3000D6968B /* CollectionHeaderView.xib */; };
+		DD20683E1F6E480F00D6968B /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20683C1F6E480F00D6968B /* PageContentView.swift */; };
+		DD20683F1F6E480F00D6968B /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20683D1F6E480F00D6968B /* PageTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F04A6BCD643249FFD2B9CB9 /* Pods_douyu_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyu_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5268257012E0D985C7C0DC8A /* Pods-douyu-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyu-demo/Pods-douyu-demo.release.xcconfig"; sourceTree = "<group>"; };
 		DD2064E11F64177800780055 /* douyu-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "douyu-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2064E41F64177800780055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2064EE1F64177800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,19 +60,23 @@
 		DD2065001F64177800780055 /* douyu-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "douyu-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2065041F64177800780055 /* douyu_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = douyu_demoUITests.swift; sourceTree = "<group>"; };
 		DD2065061F64177800780055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD20654E1F64713200780055 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DD2065551F64716400780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD2065581F64717400780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Profile.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD20655B1F64717A00780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Live.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD20655E1F64718000780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Home.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD2065611F64718800780055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Follow.storyboard"; sourceTree = SOURCE_ROOT; };
-		DD2065641F6476C100780055 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		DD2065721F64F75E00780055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD2065761F6506AD00780055 /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageTitleView.swift; path = Components/PageTitleView.swift; sourceTree = "<group>"; };
-		DD2065781F65086B00780055 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
-		DD20657A1F65376500780055 /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PageContentView.swift; path = Components/PageContentView.swift; sourceTree = "<group>"; };
-		DD20657C1F6539ED00780055 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		DD20680C1F6E381E00D6968B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DD20680D1F6E381E00D6968B /* RecommandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandViewController.swift; sourceTree = "<group>"; };
+		DD2068161F6E381E00D6968B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD20681E1F6E381E00D6968B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		DD20681F1F6E381E00D6968B /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
+		DD2068201F6E381E00D6968B /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		DD20682A1F6E3BE700D6968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD20682D1F6E3BF900D6968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Follow.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2068301F6E3BFF00D6968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Home.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2068331F6E3C0700D6968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Live.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2068361F6E3C1000D6968B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "douyu-demo/Base.lproj/Profile.storyboard"; sourceTree = SOURCE_ROOT; };
+		DD2068381F6E3E3000D6968B /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		DD2068391F6E3E3000D6968B /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		DD20683C1F6E480F00D6968B /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		DD20683D1F6E480F00D6968B /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		EE36F6987E992C845993DAC1 /* Pods-douyu-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyu-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyu-demo/Pods-douyu-demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CBA310E396AD7FFC5AC131 /* Pods_douyu_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43FBEAA6724D77E9FFFC047F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE36F6987E992C845993DAC1 /* Pods-douyu-demo.debug.xcconfig */,
+				5268257012E0D985C7C0DC8A /* Pods-douyu-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DD2064D81F64177800780055 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +121,8 @@
 				DD2064F81F64177800780055 /* douyu-demoTests */,
 				DD2065031F64177800780055 /* douyu-demoUITests */,
 				DD2064E21F64177800780055 /* Products */,
+				43FBEAA6724D77E9FFFC047F /* Pods */,
+				F4BD2AC15109ACB1D58ED777 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +139,7 @@
 		DD2064E31F64177800780055 /* douyu-demo */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065481F64713200780055 /* Classes */,
+				DD2068021F6E381E00D6968B /* Classes */,
 				DD2064E41F64177800780055 /* AppDelegate.swift */,
 				DD2064ED1F64177800780055 /* LaunchScreen.storyboard */,
 				DD2065721F64F75E00780055 /* Assets.xcassets */,
@@ -144,111 +166,202 @@
 			path = "douyu-demoUITests";
 			sourceTree = "<group>";
 		};
-		DD2065481F64713200780055 /* Classes */ = {
+		DD2068021F6E381E00D6968B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065631F6471C600780055 /* Tools */,
-				DD2065491F64713200780055 /* Controllers */,
-				DD2065511F64713200780055 /* Models */,
-				DD2065521F64713200780055 /* Views */,
+				DD2068061F6E381E00D6968B /* Follow */,
+				DD20680A1F6E381E00D6968B /* Home */,
+				DD2068101F6E381E00D6968B /* Live */,
+				DD2068141F6E381E00D6968B /* Main */,
+				DD2068191F6E381E00D6968B /* Profile */,
+				DD20681D1F6E381E00D6968B /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		DD2065491F64713200780055 /* Controllers */ = {
+		DD2068061F6E381E00D6968B /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				DD20654D1F64713200780055 /* Main */,
-				DD20654B1F64713200780055 /* Home */,
-				DD20654C1F64713200780055 /* Live */,
-				DD20654A1F64713200780055 /* Follow */,
-				DD20654F1F64713200780055 /* Profile */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		DD20654A1F64713200780055 /* Follow */ = {
-			isa = PBXGroup;
-			children = (
-				DD2065601F64718800780055 /* Follow.storyboard */,
+				DD2068071F6E381E00D6968B /* Controllers */,
+				DD2068081F6E381E00D6968B /* Models */,
+				DD2068091F6E381E00D6968B /* Views */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
 		};
-		DD20654B1F64713200780055 /* Home */ = {
+		DD2068071F6E381E00D6968B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DD20655D1F64718000780055 /* Home.storyboard */,
-				DD2065641F6476C100780055 /* HomeViewController.swift */,
+				DD20682C1F6E3BF900D6968B /* Follow.storyboard */,
 			);
-			path = Home;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		DD20654C1F64713200780055 /* Live */ = {
-			isa = PBXGroup;
-			children = (
-				DD20655A1F64717A00780055 /* Live.storyboard */,
-			);
-			path = Live;
-			sourceTree = "<group>";
-		};
-		DD20654D1F64713200780055 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				DD2065541F64716400780055 /* Main.storyboard */,
-				DD20654E1F64713200780055 /* MainViewController.swift */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
-		DD20654F1F64713200780055 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				DD2065571F64717400780055 /* Profile.storyboard */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		DD2065511F64713200780055 /* Models */ = {
+		DD2068081F6E381E00D6968B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		DD2065521F64713200780055 /* Views */ = {
+		DD2068091F6E381E00D6968B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065741F64FECE00780055 /* Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		DD2065631F6471C600780055 /* Tools */ = {
+		DD20680A1F6E381E00D6968B /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065751F6500F700780055 /* Extensions */,
-				DD2065781F65086B00780055 /* Common.swift */,
+				DD20680B1F6E381E00D6968B /* Controllers */,
+				DD20680E1F6E381E00D6968B /* Models */,
+				DD20680F1F6E381E00D6968B /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD20680B1F6E381E00D6968B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD20682F1F6E3BFF00D6968B /* Home.storyboard */,
+				DD20680C1F6E381E00D6968B /* HomeViewController.swift */,
+				DD20680D1F6E381E00D6968B /* RecommandViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD20680E1F6E381E00D6968B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD20680F1F6E381E00D6968B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068381F6E3E3000D6968B /* CollectionHeaderView.swift */,
+				DD2068391F6E3E3000D6968B /* CollectionHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2068101F6E381E00D6968B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068111F6E381E00D6968B /* Controllers */,
+				DD2068121F6E381E00D6968B /* Models */,
+				DD2068131F6E381E00D6968B /* Views */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		DD2068111F6E381E00D6968B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068321F6E3C0700D6968B /* Live.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD2068121F6E381E00D6968B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD2068131F6E381E00D6968B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2068141F6E381E00D6968B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068151F6E381E00D6968B /* Controllers */,
+				DD2068171F6E381E00D6968B /* Models */,
+				DD2068181F6E381E00D6968B /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD2068151F6E381E00D6968B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068291F6E3BE700D6968B /* Main.storyboard */,
+				DD2068161F6E381E00D6968B /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD2068171F6E381E00D6968B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD2068181F6E381E00D6968B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD20683C1F6E480F00D6968B /* PageContentView.swift */,
+				DD20683D1F6E480F00D6968B /* PageTitleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD2068191F6E381E00D6968B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DD20681A1F6E381E00D6968B /* Controllers */,
+				DD20681B1F6E381E00D6968B /* Models */,
+				DD20681C1F6E381E00D6968B /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DD20681A1F6E381E00D6968B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2068351F6E3C1000D6968B /* Profile.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD20681B1F6E381E00D6968B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD20681C1F6E381E00D6968B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD20681D1F6E381E00D6968B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DD20681E1F6E381E00D6968B /* Common.swift */,
+				DD20681F1F6E381E00D6968B /* UIBarButtonItem-Extension.swift */,
+				DD2068201F6E381E00D6968B /* UIColor-Extension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		DD2065741F64FECE00780055 /* Components */ = {
+		F4BD2AC15109ACB1D58ED777 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD2065761F6506AD00780055 /* PageTitleView.swift */,
-				DD20657A1F65376500780055 /* PageContentView.swift */,
+				0F04A6BCD643249FFD2B9CB9 /* Pods_douyu_demo.framework */,
 			);
-			name = Components;
-			sourceTree = "<group>";
-		};
-		DD2065751F6500F700780055 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DD2065681F64DBBC00780055 /* UIBarButtonItem-Extension.swift */,
-				DD20657C1F6539ED00780055 /* UIColor-Extension.swift */,
-			);
-			name = Extensions;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +371,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD2065091F64177800780055 /* Build configuration list for PBXNativeTarget "douyu-demo" */;
 			buildPhases = (
+				5CBFBDA7867B0DC4C3392CE0 /* [CP] Check Pods Manifest.lock */,
 				DD2064DD1F64177800780055 /* Sources */,
 				DD2064DE1F64177800780055 /* Frameworks */,
 				DD2064DF1F64177800780055 /* Resources */,
+				7C9A464ED40E5B7927CB4058 /* [CP] Embed Pods Frameworks */,
+				239689D16A2C09B8B40BE30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -361,13 +477,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2065561F64716400780055 /* Main.storyboard in Resources */,
+				DD20682B1F6E3BE700D6968B /* Main.storyboard in Resources */,
+				DD20683B1F6E3E3000D6968B /* CollectionHeaderView.xib in Resources */,
+				DD2068311F6E3BFF00D6968B /* Home.storyboard in Resources */,
+				DD2068341F6E3C0700D6968B /* Live.storyboard in Resources */,
 				DD2064EF1F64177800780055 /* LaunchScreen.storyboard in Resources */,
-				DD2065591F64717400780055 /* Profile.storyboard in Resources */,
-				DD20655F1F64718000780055 /* Home.storyboard in Resources */,
 				DD2065731F64F75E00780055 /* Assets.xcassets in Resources */,
-				DD2065621F64718800780055 /* Follow.storyboard in Resources */,
-				DD20655C1F64717A00780055 /* Live.storyboard in Resources */,
+				DD2068371F6E3C1000D6968B /* Profile.storyboard in Resources */,
+				DD20682E1F6E3BF900D6968B /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,19 +504,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		239689D16A2C09B8B40BE30C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyu-demo/Pods-douyu-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CBFBDA7867B0DC4C3392CE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douyu-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C9A464ED40E5B7927CB4058 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-douyu-demo/Pods-douyu-demo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyu-demo/Pods-douyu-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD2064DD1F64177800780055 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2068241F6E381E00D6968B /* RecommandViewController.swift in Sources */,
+				DD20683E1F6E480F00D6968B /* PageContentView.swift in Sources */,
+				DD20683F1F6E480F00D6968B /* PageTitleView.swift in Sources */,
+				DD20683A1F6E3E3000D6968B /* CollectionHeaderView.swift in Sources */,
+				DD2068271F6E381E00D6968B /* UIBarButtonItem-Extension.swift in Sources */,
 				DD2064E51F64177800780055 /* AppDelegate.swift in Sources */,
-				DD20657D1F6539ED00780055 /* UIColor-Extension.swift in Sources */,
-				DD2065531F64713200780055 /* MainViewController.swift in Sources */,
-				DD2065771F6506AD00780055 /* PageTitleView.swift in Sources */,
-				DD20657B1F65376500780055 /* PageContentView.swift in Sources */,
-				DD2065691F64DBBC00780055 /* UIBarButtonItem-Extension.swift in Sources */,
-				DD2065791F65086B00780055 /* Common.swift in Sources */,
-				DD2065651F6476C100780055 /* HomeViewController.swift in Sources */,
+				DD2068281F6E381E00D6968B /* UIColor-Extension.swift in Sources */,
+				DD2068251F6E381E00D6968B /* MainViewController.swift in Sources */,
+				DD2068231F6E381E00D6968B /* HomeViewController.swift in Sources */,
+				DD2068261F6E381E00D6968B /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,44 +616,44 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		DD2065541F64716400780055 /* Main.storyboard */ = {
+		DD2068291F6E3BE700D6968B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD2065551F64716400780055 /* Base */,
+				DD20682A1F6E3BE700D6968B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		DD2065571F64717400780055 /* Profile.storyboard */ = {
+		DD20682C1F6E3BF900D6968B /* Follow.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD2065581F64717400780055 /* Base */,
+				DD20682D1F6E3BF900D6968B /* Base */,
 			);
-			name = Profile.storyboard;
+			name = Follow.storyboard;
 			sourceTree = "<group>";
 		};
-		DD20655A1F64717A00780055 /* Live.storyboard */ = {
+		DD20682F1F6E3BFF00D6968B /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD20655B1F64717A00780055 /* Base */,
-			);
-			name = Live.storyboard;
-			sourceTree = "<group>";
-		};
-		DD20655D1F64718000780055 /* Home.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD20655E1F64718000780055 /* Base */,
+				DD2068301F6E3BFF00D6968B /* Base */,
 			);
 			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
-		DD2065601F64718800780055 /* Follow.storyboard */ = {
+		DD2068321F6E3C0700D6968B /* Live.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				DD2065611F64718800780055 /* Base */,
+				DD2068331F6E3C0700D6968B /* Base */,
 			);
-			name = Follow.storyboard;
+			name = Live.storyboard;
+			sourceTree = "<group>";
+		};
+		DD2068351F6E3C1000D6968B /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD2068361F6E3C1000D6968B /* Base */,
+			);
+			name = Profile.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -583,6 +756,7 @@
 		};
 		DD20650A1F64177800780055 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE36F6987E992C845993DAC1 /* Pods-douyu-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -599,6 +773,7 @@
 		};
 		DD20650B1F64177800780055 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5268257012E0D985C7C0DC8A /* Pods-douyu-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

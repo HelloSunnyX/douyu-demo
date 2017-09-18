@@ -1,0 +1,6 @@
+framework module Pods_douyu_demo {
+  umbrella header "Pods-douyu-demo-umbrella.h"
+
+  export *
+  module * { export * }
+}
